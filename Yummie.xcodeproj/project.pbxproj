@@ -17,6 +17,9 @@
 		AADDF49829E9E2C5002BFD50 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49729E9E2C5002BFD50 /* OnboardingSlide.swift */; };
 		AADDF49A29E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49929E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift */; };
 		AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49C29E9F42D002BFD50 /* HomeViewController.swift */; };
+		AADDF4A229E9F7D2002BFD50 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF4A029E9F7D2002BFD50 /* CategoryCollectionViewCell.swift */; };
+		AADDF4A329E9F7D2002BFD50 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADDF4A129E9F7D2002BFD50 /* CategoryCollectionViewCell.xib */; };
+		AADDF4A529E9F8D5002BFD50 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF4A429E9F8D5002BFD50 /* DishCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		AADDF49729E9E2C5002BFD50 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		AADDF49929E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		AADDF49C29E9F42D002BFD50 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AADDF4A029E9F7D2002BFD50 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		AADDF4A129E9F7D2002BFD50 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		AADDF4A429E9F8D5002BFD50 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				AADDF49729E9E2C5002BFD50 /* OnboardingSlide.swift */,
+				AADDF4A429E9F8D5002BFD50 /* DishCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +105,7 @@
 		AADDF49029E9DF8F002BFD50 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				AADDF49E29E9F7A9002BFD50 /* CollectionViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -125,6 +133,23 @@
 				AADDF49C29E9F42D002BFD50 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		AADDF49E29E9F7A9002BFD50 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AADDF49F29E9F7B2002BFD50 /* CategoryCollectoinViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		AADDF49F29E9F7B2002BFD50 /* CategoryCollectoinViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AADDF4A029E9F7D2002BFD50 /* CategoryCollectionViewCell.swift */,
+				AADDF4A129E9F7D2002BFD50 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectoinViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADDF4A329E9F7D2002BFD50 /* CategoryCollectionViewCell.xib in Resources */,
 				AADDF48729E9DF5D002BFD50 /* LaunchScreen.storyboard in Resources */,
 				AADDF48429E9DF5D002BFD50 /* Assets.xcassets in Resources */,
 				AADDF48229E9DF5C002BFD50 /* Main.storyboard in Resources */,
@@ -198,12 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADDF4A229E9F7D2002BFD50 /* CategoryCollectionViewCell.swift in Sources */,
 				AADDF49829E9E2C5002BFD50 /* OnboardingSlide.swift in Sources */,
 				AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */,
 				AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */,
 				AADDF49A29E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift in Sources */,
 				AADDF49629E9E221002BFD50 /* UIView+Extension.swift in Sources */,
 				AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */,
+				AADDF4A529E9F8D5002BFD50 /* DishCategory.swift in Sources */,
 				AADDF49329E9DFBD002BFD50 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
