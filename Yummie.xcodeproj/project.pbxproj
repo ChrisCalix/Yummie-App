@@ -13,6 +13,10 @@
 		AADDF48429E9DF5D002BFD50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADDF48329E9DF5D002BFD50 /* Assets.xcassets */; };
 		AADDF48729E9DF5D002BFD50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADDF48529E9DF5D002BFD50 /* LaunchScreen.storyboard */; };
 		AADDF49329E9DFBD002BFD50 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49229E9DFBD002BFD50 /* OnBoardingViewController.swift */; };
+		AADDF49629E9E221002BFD50 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49529E9E221002BFD50 /* UIView+Extension.swift */; };
+		AADDF49829E9E2C5002BFD50 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49729E9E2C5002BFD50 /* OnboardingSlide.swift */; };
+		AADDF49A29E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49929E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift */; };
+		AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF49C29E9F42D002BFD50 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AADDF48629E9DF5D002BFD50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AADDF48829E9DF5D002BFD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AADDF49229E9DFBD002BFD50 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		AADDF49529E9E221002BFD50 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AADDF49729E9E2C5002BFD50 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		AADDF49929E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		AADDF49C29E9F42D002BFD50 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		AADDF47929E9DF5C002BFD50 /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				AADDF49429E9E212002BFD50 /* Extensions */,
 				AADDF49029E9DF8F002BFD50 /* CustomViews */,
 				AADDF48F29E9DF78002BFD50 /* Views */,
 				AADDF48E29E9DF67002BFD50 /* Models */,
@@ -72,6 +81,7 @@
 		AADDF48E29E9DF67002BFD50 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AADDF49729E9E2C5002BFD50 /* OnboardingSlide.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,6 +89,7 @@
 		AADDF48F29E9DF78002BFD50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AADDF49B29E9F41E002BFD50 /* Home */,
 				AADDF49129E9DF96002BFD50 /* OnBoarding */,
 			);
 			path = Views;
@@ -95,8 +106,25 @@
 			isa = PBXGroup;
 			children = (
 				AADDF49229E9DFBD002BFD50 /* OnBoardingViewController.swift */,
+				AADDF49929E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift */,
 			);
 			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		AADDF49429E9E212002BFD50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AADDF49529E9E221002BFD50 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AADDF49B29E9F41E002BFD50 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AADDF49C29E9F42D002BFD50 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADDF49829E9E2C5002BFD50 /* OnboardingSlide.swift in Sources */,
 				AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */,
 				AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */,
+				AADDF49A29E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift in Sources */,
+				AADDF49629E9E221002BFD50 /* UIView+Extension.swift in Sources */,
+				AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */,
 				AADDF49329E9DFBD002BFD50 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
