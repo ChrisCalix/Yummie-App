@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02AEDD58CBAE0AD4F9FC157C /* Pods_Yummie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9402CA4211EB570FAF5EA0F /* Pods_Yummie.framework */; };
 		AA64114029EAF6AD00CB4BC3 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA64113F29EAF6AD00CB4BC3 /* DishDetailViewController.swift */; };
+		AA9A27A729EB639100B1F795 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27A629EB639100B1F795 /* UIViewController.swift */; };
 		AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */; };
 		AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */; };
 		AADDF48229E9DF5C002BFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADDF48029E9DF5C002BFD50 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		328F78C853880C4A1CDBACE7 /* Pods-Yummie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.debug.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.debug.xcconfig"; sourceTree = "<group>"; };
 		AA64113F29EAF6AD00CB4BC3 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		AA9A27A629EB639100B1F795 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AADDF47729E9DF5C002BFD50 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				AADDF49529E9E221002BFD50 /* UIView+Extension.swift */,
 				AADDF4A629E9F9FF002BFD50 /* String+Extension.swift */,
+				AA9A27A629EB639100B1F795 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				AADDF4AC29EA1530002BFD50 /* CardView.swift in Sources */,
 				AADDF49329E9DFBD002BFD50 /* OnBoardingViewController.swift in Sources */,
 				AADDF4B329EA1B4E002BFD50 /* Dish.swift in Sources */,
+				AA9A27A729EB639100B1F795 /* UIViewController.swift in Sources */,
 				AADDF4B029EA1A5A002BFD50 /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
