@@ -26,6 +26,8 @@
 		AADDF4B029EA1A5A002BFD50 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF4AE29EA1A5A002BFD50 /* DishPortraitCollectionViewCell.swift */; };
 		AADDF4B129EA1A5A002BFD50 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADDF4AF29EA1A5A002BFD50 /* DishPortraitCollectionViewCell.xib */; };
 		AADDF4B329EA1B4E002BFD50 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF4B229EA1B4E002BFD50 /* Dish.swift */; };
+		AADDF4B729EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF4B529EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift */; };
+		AADDF4B829EA206D002BFD50 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADDF4B629EA206D002BFD50 /* DishLandscapeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		AADDF4AE29EA1A5A002BFD50 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
 		AADDF4AF29EA1A5A002BFD50 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
 		AADDF4B229EA1B4E002BFD50 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		AADDF4B529EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AADDF4B629EA206D002BFD50 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		C9402CA4211EB570FAF5EA0F /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ABDE174C80B1884163DE9F /* Pods-Yummie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.release.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +179,7 @@
 		AADDF49E29E9F7A9002BFD50 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				AADDF4B429EA2056002BFD50 /* DishLandscapeCollectionViewCell */,
 				AADDF4AD29EA1A2F002BFD50 /* DishPortraitCollectionViewCell */,
 				AADDF49F29E9F7B2002BFD50 /* CategoryCollectoinViewCell */,
 			);
@@ -205,6 +210,15 @@
 				AADDF4AF29EA1A5A002BFD50 /* DishPortraitCollectionViewCell.xib */,
 			);
 			path = DishPortraitCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		AADDF4B429EA2056002BFD50 /* DishLandscapeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AADDF4B529EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift */,
+				AADDF4B629EA206D002BFD50 /* DishLandscapeCollectionViewCell.xib */,
+			);
+			path = DishLandscapeCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +285,7 @@
 				AADDF48729E9DF5D002BFD50 /* LaunchScreen.storyboard in Resources */,
 				AADDF4B129EA1A5A002BFD50 /* DishPortraitCollectionViewCell.xib in Resources */,
 				AADDF48429E9DF5D002BFD50 /* Assets.xcassets in Resources */,
+				AADDF4B829EA206D002BFD50 /* DishLandscapeCollectionViewCell.xib in Resources */,
 				AADDF48229E9DF5C002BFD50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +347,7 @@
 				AADDF49629E9E221002BFD50 /* UIView+Extension.swift in Sources */,
 				AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */,
 				AADDF4A529E9F8D5002BFD50 /* DishCategory.swift in Sources */,
+				AADDF4B729EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift in Sources */,
 				AADDF4A729E9F9FF002BFD50 /* String+Extension.swift in Sources */,
 				AADDF4AC29EA1530002BFD50 /* CardView.swift in Sources */,
 				AADDF49329E9DFBD002BFD50 /* OnBoardingViewController.swift in Sources */,

@@ -26,6 +26,13 @@ class HomeViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var specialsCollectionView: UICollectionView! {
+        didSet {
+            specialsCollectionView.dataSource = self
+            specialsCollectionView.delegate = self
+            specialsCollectionView.register(UINib(nibName: DishLandscapeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
+        }
+    }
 
     var categories: [DishCategory] = [
         .init(id: "id1", name: "Africa Dish", image: "https://picsum.photos/100/200"),
@@ -41,6 +48,11 @@ class HomeViewController: UIViewController {
         .init(id: "id1", name: "Pizza", description: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 1004),
     ]
 
+    var specials: [Dish] = [
+        .init(id: "id1", name: "Fried Plantain", description: "This is my favorite dish.", image: "https://picsum.photos/100/200", calories: 314),
+        .init(id: "id1", name: "Beans and garry", description: "This is my favorite dish ever tested.", image: "https://picsum.photos/100/200", calories: 1004)
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,6 +66,8 @@ extension HomeViewController: UICollectionViewDataSource {
             return categories.count
         case popularCollectionView:
             return populars.count
+        case specialsCollectionView:
+            return specials.count
         default:
             return 0
         }
@@ -75,6 +89,13 @@ extension HomeViewController: UICollectionViewDataSource {
             }
 
             cell.setup(dish: populars[indexPath.row])
+            return cell
+        case specialsCollectionView:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as? DishLandscapeCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+
+            cell.setup(dish: specials[indexPath.row])
             return cell
         default:
             return UICollectionViewCell()
