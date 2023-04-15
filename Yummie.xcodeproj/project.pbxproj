@@ -13,6 +13,8 @@
 		AA9A27AC29EB68D800B1F795 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27AA29EB68D800B1F795 /* DishListTableViewCell.swift */; };
 		AA9A27AD29EB68D800B1F795 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA9A27AB29EB68D800B1F795 /* DishListTableViewCell.xib */; };
 		AA9A27B029EB6AE200B1F795 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27AF29EB6AE200B1F795 /* ListDishesViewController.swift */; };
+		AA9A27B329EB6E8B00B1F795 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27B229EB6E8B00B1F795 /* ListOrdersViewController.swift */; };
+		AA9A27B529EB702600B1F795 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27B429EB702600B1F795 /* Order.swift */; };
 		AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */; };
 		AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */; };
 		AADDF48229E9DF5C002BFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADDF48029E9DF5C002BFD50 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		AA9A27AA29EB68D800B1F795 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		AA9A27AB29EB68D800B1F795 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		AA9A27AF29EB6AE200B1F795 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		AA9A27B229EB6E8B00B1F795 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
+		AA9A27B429EB702600B1F795 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		AADDF47729E9DF5C002BFD50 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,14 @@
 			path = ListDishes;
 			sourceTree = "<group>";
 		};
+		AA9A27B129EB6E7C00B1F795 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				AA9A27B229EB6E8B00B1F795 /* ListOrdersViewController.swift */,
+			);
+			path = ListOrders;
+			sourceTree = "<group>";
+		};
 		AADDF46E29E9DF5C002BFD50 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +183,7 @@
 				AADDF49729E9E2C5002BFD50 /* OnboardingSlide.swift */,
 				AADDF4A429E9F8D5002BFD50 /* DishCategory.swift */,
 				AADDF4B229EA1B4E002BFD50 /* Dish.swift */,
+				AA9A27B429EB702600B1F795 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +191,7 @@
 		AADDF48F29E9DF78002BFD50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA9A27B129EB6E7C00B1F795 /* ListOrders */,
 				AA9A27AE29EB6AC800B1F795 /* ListDishes */,
 				AA64113E29EAF69800CB4BC3 /* DishDetail */,
 				AADDF49B29E9F41E002BFD50 /* Home */,
@@ -388,6 +402,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9A27AC29EB68D800B1F795 /* DishListTableViewCell.swift in Sources */,
+				AA9A27B329EB6E8B00B1F795 /* ListOrdersViewController.swift in Sources */,
+				AA9A27B529EB702600B1F795 /* Order.swift in Sources */,
 				AADDF4A229E9F7D2002BFD50 /* CategoryCollectionViewCell.swift in Sources */,
 				AADDF49829E9E2C5002BFD50 /* OnboardingSlide.swift in Sources */,
 				AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */,
