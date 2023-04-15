@@ -395,6 +395,37 @@
             </objects>
             <point key="canvasLocation" x="2709.1603053435115" y="3.5211267605633805"/>
         </scene>
+        <!--List Dishes View Controller-->
+        <scene sceneID="2tM-GB-Rxy">
+            <objects>
+                <viewController storyboardIdentifier="ListDishesViewController" id="7WU-Iy-zvu" customClass="ListDishesViewController" customModule="Yummie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tJc-ZH-ZBI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lpn-VO-fNQ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4fT-Qd-8JH"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lpn-VO-fNQ" firstAttribute="top" secondItem="tJc-ZH-ZBI" secondAttribute="top" id="aew-Fg-X65"/>
+                            <constraint firstItem="lpn-VO-fNQ" firstAttribute="trailing" secondItem="4fT-Qd-8JH" secondAttribute="trailing" id="hRe-J5-e0V"/>
+                            <constraint firstItem="lpn-VO-fNQ" firstAttribute="leading" secondItem="4fT-Qd-8JH" secondAttribute="leading" id="kdo-xU-cSc"/>
+                            <constraint firstAttribute="bottom" secondItem="lpn-VO-fNQ" secondAttribute="bottom" id="qAJ-V7-qSA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="lpn-VO-fNQ" id="toD-Ws-KQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7M-yM-iwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3402.2900763358775" y="11.971830985915494"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="57k-8G-dLU">
             <objects>
