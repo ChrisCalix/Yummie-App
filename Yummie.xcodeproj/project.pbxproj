@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02AEDD58CBAE0AD4F9FC157C /* Pods_Yummie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9402CA4211EB570FAF5EA0F /* Pods_Yummie.framework */; };
+		AA64114029EAF6AD00CB4BC3 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA64113F29EAF6AD00CB4BC3 /* DishDetailViewController.swift */; };
 		AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */; };
 		AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */; };
 		AADDF48229E9DF5C002BFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADDF48029E9DF5C002BFD50 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		328F78C853880C4A1CDBACE7 /* Pods-Yummie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.debug.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.debug.xcconfig"; sourceTree = "<group>"; };
+		AA64113F29EAF6AD00CB4BC3 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		AADDF47729E9DF5C002BFD50 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AA64113E29EAF69800CB4BC3 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AA64113F29EAF6AD00CB4BC3 /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
 		AADDF46E29E9DF5C002BFD50 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		AADDF48F29E9DF78002BFD50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA64113E29EAF69800CB4BC3 /* DishDetail */,
 				AADDF49B29E9F41E002BFD50 /* Home */,
 				AADDF49129E9DF96002BFD50 /* OnBoarding */,
 			);
@@ -345,6 +356,7 @@
 				AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */,
 				AADDF49A29E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift in Sources */,
 				AADDF49629E9E221002BFD50 /* UIView+Extension.swift in Sources */,
+				AA64114029EAF6AD00CB4BC3 /* DishDetailViewController.swift in Sources */,
 				AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */,
 				AADDF4A529E9F8D5002BFD50 /* DishCategory.swift in Sources */,
 				AADDF4B729EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift in Sources */,
