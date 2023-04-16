@@ -15,6 +15,10 @@
 		AA9A27B029EB6AE200B1F795 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27AF29EB6AE200B1F795 /* ListDishesViewController.swift */; };
 		AA9A27B329EB6E8B00B1F795 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27B229EB6E8B00B1F795 /* ListOrdersViewController.swift */; };
 		AA9A27B529EB702600B1F795 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27B429EB702600B1F795 /* Order.swift */; };
+		AA9A27B829EB780000B1F795 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27B729EB780000B1F795 /* NetworkService.swift */; };
+		AA9A27BA29EB858200B1F795 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27B929EB858200B1F795 /* Route.swift */; };
+		AA9A27BC29EB860700B1F795 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27BB29EB860700B1F795 /* Method.swift */; };
+		AA9A27BE29EB8E0800B1F795 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27BD29EB8E0800B1F795 /* AppError.swift */; };
 		AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */; };
 		AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */; };
 		AADDF48229E9DF5C002BFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADDF48029E9DF5C002BFD50 /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 		AA9A27AF29EB6AE200B1F795 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		AA9A27B229EB6E8B00B1F795 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		AA9A27B429EB702600B1F795 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AA9A27B729EB780000B1F795 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AA9A27B929EB858200B1F795 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AA9A27BB29EB860700B1F795 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		AA9A27BD29EB8E0800B1F795 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		AADDF47729E9DF5C002BFD50 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +150,17 @@
 			path = ListOrders;
 			sourceTree = "<group>";
 		};
+		AA9A27B629EB77F000B1F795 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AA9A27B729EB780000B1F795 /* NetworkService.swift */,
+				AA9A27B929EB858200B1F795 /* Route.swift */,
+				AA9A27BB29EB860700B1F795 /* Method.swift */,
+				AA9A27BD29EB8E0800B1F795 /* AppError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		AADDF46E29E9DF5C002BFD50 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +182,7 @@
 		AADDF47929E9DF5C002BFD50 /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				AA9A27B629EB77F000B1F795 /* Networking */,
 				AADDF49429E9E212002BFD50 /* Extensions */,
 				AADDF49029E9DF8F002BFD50 /* CustomViews */,
 				AADDF48F29E9DF78002BFD50 /* Views */,
@@ -409,15 +429,19 @@
 				AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */,
 				AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */,
 				AADDF49A29E9E46B002BFD50 /* OnBoardingCollectionViewCell.swift in Sources */,
+				AA9A27BC29EB860700B1F795 /* Method.swift in Sources */,
 				AADDF49629E9E221002BFD50 /* UIView+Extension.swift in Sources */,
 				AA64114029EAF6AD00CB4BC3 /* DishDetailViewController.swift in Sources */,
 				AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */,
 				AADDF4A529E9F8D5002BFD50 /* DishCategory.swift in Sources */,
 				AADDF4B729EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift in Sources */,
+				AA9A27BA29EB858200B1F795 /* Route.swift in Sources */,
+				AA9A27B829EB780000B1F795 /* NetworkService.swift in Sources */,
 				AADDF4A729E9F9FF002BFD50 /* String+Extension.swift in Sources */,
 				AADDF4AC29EA1530002BFD50 /* CardView.swift in Sources */,
 				AADDF49329E9DFBD002BFD50 /* OnBoardingViewController.swift in Sources */,
 				AA9A27B029EB6AE200B1F795 /* ListDishesViewController.swift in Sources */,
+				AA9A27BE29EB8E0800B1F795 /* AppError.swift in Sources */,
 				AADDF4B329EA1B4E002BFD50 /* Dish.swift in Sources */,
 				AA9A27A729EB639100B1F795 /* UIViewController.swift in Sources */,
 				AADDF4B029EA1A5A002BFD50 /* DishPortraitCollectionViewCell.swift in Sources */,
