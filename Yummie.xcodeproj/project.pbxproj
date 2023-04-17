@@ -19,6 +19,7 @@
 		AA9A27BA29EB858200B1F795 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27B929EB858200B1F795 /* Route.swift */; };
 		AA9A27BC29EB860700B1F795 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27BB29EB860700B1F795 /* Method.swift */; };
 		AA9A27BE29EB8E0800B1F795 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A27BD29EB8E0800B1F795 /* AppError.swift */; };
+		AAD9D1E729EDCF900065A0DA /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D1E629EDCF900065A0DA /* ApiResponse.swift */; };
 		AADDF47B29E9DF5C002BFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */; };
 		AADDF47D29E9DF5C002BFD50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */; };
 		AADDF48229E9DF5C002BFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADDF48029E9DF5C002BFD50 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		AA9A27B929EB858200B1F795 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		AA9A27BB29EB860700B1F795 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		AA9A27BD29EB8E0800B1F795 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		AAD9D1E629EDCF900065A0DA /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		AADDF47729E9DF5C002BFD50 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADDF47A29E9DF5C002BFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADDF47C29E9DF5C002BFD50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				AA9A27B929EB858200B1F795 /* Route.swift */,
 				AA9A27BB29EB860700B1F795 /* Method.swift */,
 				AA9A27BD29EB8E0800B1F795 /* AppError.swift */,
+				AAD9D1E629EDCF900065A0DA /* ApiResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				AA64114029EAF6AD00CB4BC3 /* DishDetailViewController.swift in Sources */,
 				AADDF49D29E9F42D002BFD50 /* HomeViewController.swift in Sources */,
 				AADDF4A529E9F8D5002BFD50 /* DishCategory.swift in Sources */,
+				AAD9D1E729EDCF900065A0DA /* ApiResponse.swift in Sources */,
 				AADDF4B729EA206D002BFD50 /* DishLandscapeCollectionViewCell.swift in Sources */,
 				AA9A27BA29EB858200B1F795 /* Route.swift in Sources */,
 				AA9A27B829EB780000B1F795 /* NetworkService.swift in Sources */,
