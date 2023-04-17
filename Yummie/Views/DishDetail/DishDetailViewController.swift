@@ -48,7 +48,7 @@ class DishDetailViewController: UIViewController {
             return
         }
 
-        ProgressHUD.show()
+        ProgressHUD.show("Placing Order...")
         NetworkService.shared.placeOrder(dishId: dishId, name: name) { result in
             switch result {
             case .success(_):
