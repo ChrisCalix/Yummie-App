@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class HomeViewController: UIViewController {
 
@@ -34,29 +35,32 @@ class HomeViewController: UIViewController {
         }
     }
 
-    var categories: [DishCategory] = [
-        .init(id: "id1", name: "Africa Dish", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 2", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 3", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 4", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish 5", image: "https://picsum.photos/100/200"),
-    ]
+    var categories = [DishCategory]()
 
-    var populars: [Dish] = [
-        .init(id: "id1", name: "Garri", description: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 34),
-        .init(id: "id1", name: "Indomie", description: "This is the best I have ever tasted This is the best I have ever tasted, This is the best I have ever tasted. This is the best I have ever tasted,This is the best I have ever tasted This is the best I have ever tasted. This is the best I have ever tasted, This is the best I have ever tasted: This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 324),
-        .init(id: "id1", name: "Pizza", description: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 1004),
-    ]
+    var populars = [Dish]()
 
-    var specials: [Dish] = [
-        .init(id: "id1", name: "Fried Plantain", description: "This is my favorite dish.", image: "https://picsum.photos/100/200", calories: 314),
-        .init(id: "id1", name: "Beans and garry", description: "This is my favorite dish ever tested.", image: "https://picsum.photos/100/200", calories: 1004)
-    ]
+    var specials = [Dish]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        ProgressHUD.show()
+        NetworkService.shared.fetchAllCategories { [weak self] (result: Result<AllDishes, Error>) in
+            guard let self else { return }
+            switch result {
+            case .success(let success):
+                self.specials = success.specials ?? []
+                self.categories = success.categories ?? []
+                self.populars = success.populars ?? []
+                self.categoryCollectionView.reloadData()
+                self.popularCollectionView.reloadData()
+                self.specialsCollectionView.reloadData()
+                ProgressHUD.dismiss()
+            case .failure(let failure):
+                print("Error all dishes")
+                ProgressHUD.showError(failure.localizedDescription)
+            }
+        }
     }
 }
 

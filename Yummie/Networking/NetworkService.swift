@@ -14,9 +14,12 @@ struct NetworkService {
     private init() {}
 
     func myFirstRequest<T: Decodable>(completion: @escaping(Result<T, Error>) -> ()) {
-        request(route: .temp, method: .get, type: T.self,completion: completion)
+        request(route: .fetchAllCategories, method: .get, type: T.self,completion: completion)
     }
 
+    func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>) -> Void) {
+        request(route: .fetchAllCategories, method: .get, type: AllDishes.self, completion: completion)
+    }
     private func request<T: Decodable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
@@ -31,11 +34,11 @@ struct NetworkService {
             var result: Result<Data, Error>?
             if let data {
                 result = .success(data)
-                let responseString = String(data: data, encoding: .utf8) ?? "Could not stringify our data"
+//                let responseString = String(data: data, encoding: .utf8) ?? "Could not stringify our data"
 //                print("The response is \(responseString)")
             } else if let error {
                 result = .failure(error)
-                print("The error is: \(error.localizedDescription)")
+//                print("The error is: \(error.localizedDescription)")
             }
 
             DispatchQueue.main.async {
