@@ -22,8 +22,6 @@ class CategoryCollectionViewCell: UICollectionViewCell, ReusableView {
     func setup(category: DishCategory) {
         categoryTitleLbl.text = category.name
         categoryImageView.kf.setImage(with: category.image?.asUrl)
-
-        print("Debug: \(category.name) ---- \(category.image)")
     }
 
 }

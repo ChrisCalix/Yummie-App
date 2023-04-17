@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ListOrdersViewController: UIViewController {
 
@@ -17,12 +18,7 @@ class ListOrdersViewController: UIViewController {
         }
     }
 
-    var orders: [Order] = [
-        .init(id: "id", name: "Emmanuel Okinawa", dish: .init(id: "id1", name: "Garri", description: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 34)),
-        .init(id: "id", name: "Uzoc Okinawa", dish: .init(id: "id1", name: " Beans Garri", description: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 34)),
-        .init(id: "id", name: "David Okinawa", dish: .init(id: "id1", name: "Also", description: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 34)),
-        .init(id: "id", name: "Grace Okinawa", dish: .init(id: "id1", name: "Coiunt counted", description: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 34)),
-    ]
+    var orders = [Order]()
 
 
     override func viewDidLoad() {
@@ -31,7 +27,22 @@ class ListOrdersViewController: UIViewController {
         title = "Orders"
 
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        ProgressHUD.show()
+        NetworkService.shared.fetchOrders { [weak self] result in
+            guard let self else { return }
+            switch result {
+                case let .success(orders):
+                    ProgressHUD.dismiss()
+                    self.orders = orders
+                    self.tableView.reloadData()
+                case let .failure(error):
+                    ProgressHUD.showError(error.localizedDescription)
+            }
 
+        }
+    }
 
 }
 

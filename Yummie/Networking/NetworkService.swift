@@ -32,6 +32,10 @@ struct NetworkService {
         request(route: .fetchCategoryDishes(categoryId), method: .get, type: [Dish].self, completion: completion)
     }
 
+    func fetchOrders(completion: @escaping(Result<[Order], Error>)->Void ) {
+        request(route: .fetchOrders, method: .get, type: [Order].self, completion: completion)
+    }
+    
     private func request<T: Decodable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
@@ -46,8 +50,8 @@ struct NetworkService {
             var result: Result<Data, Error>?
             if let data {
                 result = .success(data)
-//                let responseString = String(data: data, encoding: .utf8) ?? "Could not stringify our data"
-//                print("The response is \(responseString)")
+                let responseString = String(data: data, encoding: .utf8) ?? "Could not stringify our data"
+                print("The response is \(responseString)")
             } else if let error {
                 result = .failure(error)
 //                print("The error is: \(error.localizedDescription)")
