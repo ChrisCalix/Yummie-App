@@ -12,7 +12,7 @@
         <!--On Boarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnBoardingViewController" customModule="Yummie" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingViewController" id="BYZ-38-t0r" customClass="OnBoardingViewController" customModule="Yummie" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,7 +135,7 @@
         <!--Yummie-->
         <scene sceneID="exg-eK-ZeG">
             <objects>
-                <viewController id="dUf-B9-50h" customClass="HomeViewController" customModule="Yummie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="dUf-B9-50h" customClass="HomeViewController" customModule="Yummie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dlA-Tv-61Q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
